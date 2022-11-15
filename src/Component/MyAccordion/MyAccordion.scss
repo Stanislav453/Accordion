@@ -28,8 +28,10 @@
             transition: opacity .7s,  transform .3s;
         }
 
-        &:nth-child(1) {
-            margin-top: 0;
+        &:focus {
+            opacity: 1;
+            transform: scale(1.01);
+            transition: opacity .7s,  transform .3s;
         }
 
         p {
@@ -74,6 +76,12 @@
             }
         }
     }
+
+}
+
+.article-container.active {
+    opacity: 1;
+    transform: scale(1.01);
 
 }
 
