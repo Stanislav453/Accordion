@@ -22,6 +22,21 @@
             margin-top: 0;
         }
 
+        p {
+            height: 0;
+            max-height: 0;
+            margin: 0 15px;
+            overflow: hidden;
+            transition: all .5s;
+        }
+
+        .show {
+            height: 60px;
+            max-height: 150px;
+            margin: 0 15px;
+            transition: all .5s;
+        }
+
         .article-header {
             display: flex;
             flex-direction: row;
@@ -33,10 +48,46 @@
             h2 {
                 color: $--Hight-text-color;
                 margin: 0;
+                text-shadow: 1px 3px 1px #000;
             }
 
             .icon {
                 font-size: 2.5em;
+                transform: rotate(0);
+                transition: transform .5s;
+            }
+
+            .move {
+                transform: rotate(.75turn);
+                transition: transform .5s;
+            }
+        }
+    }
+
+}
+
+@media ( max-width: 1300px ) {
+    .accordion-container {
+        width: 95%;
+
+        .article-container {
+
+            .show {
+                height: 70px;
+            }
+        }
+    }
+
+}
+
+@media ( max-width: 520px ) {
+    .accordion-container {
+        width: 95%;
+
+        .article-container {
+
+            .show {
+                height: 130px;
             }
         }
     }
