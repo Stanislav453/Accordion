@@ -1,0 +1,22 @@
+@import "../../SCSS/variables";
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0;
+    color: $--Hight-text-color ;
+    font-size: 3em;
+    text-align: center;
+
+}
+
+.underline {
+    width: 20%;
+    height: 8px;
+    background-color: $--Hight-text-color;
+}
