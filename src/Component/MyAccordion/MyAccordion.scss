@@ -17,6 +17,16 @@
         margin-top: 15px;
         box-shadow: 1px 1px 10px rgb(64, 63, 63);
         border-radius: 10px;
+        opacity: .7;
+        transform: scale(1);
+        cursor: pointer;
+        transition: opacity .7s, transform .7s;
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1.01);
+            transition: opacity .7s,  transform .3s;
+        }
 
         &:nth-child(1) {
             margin-top: 0;
@@ -44,6 +54,7 @@
             color: $--Hight-text-color;
             align-items: center;
             padding: 15px;
+            transition: opacity .3s;
             
             h2 {
                 color: $--Hight-text-color;
