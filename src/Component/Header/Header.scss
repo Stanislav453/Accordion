@@ -5,18 +5,22 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h1 {
+        margin: 20px 0;
+        color: $--Hight-text-color ;
+        font-size: 3em;
+        text-align: center;
+        text-shadow: 5px 5px 15px #000;
+    
+    }
+    
+    .underline {
+        width: 20%;
+        height: 8px;
+        background-color: $--Hight-text-color;
+        box-shadow: 5px 5px 15px #000;
+    }
+
 }
 
-h1 {
-    margin: 20px 0;
-    color: $--Hight-text-color ;
-    font-size: 3em;
-    text-align: center;
-
-}
-
-.underline {
-    width: 20%;
-    height: 8px;
-    background-color: $--Hight-text-color;
-}
