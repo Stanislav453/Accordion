@@ -20,7 +20,7 @@ const MyAccordion = ({ data }) => {
             data.map( (item, index) => {
                 const { title, desc } = item;
                 return (
-                        <article className="article-container" key={index} >
+                        <article className={ value === index ? "article-container active" : "article-container" } key={index} >
                             <header className="article-header" onClick={ () => myToggle(index) }>
                                 <h2>{title}</h2>
                                 <FaAngleDoubleRight className={ value === index ? "icon move" : "icon" } />
